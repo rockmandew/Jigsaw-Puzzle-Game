@@ -1,0 +1,19 @@
+{
+  "name": "JigsawGame",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Jigsaw Canvas Game",
+  "author": "Ryan Kethcart",
+  "scripts": {
+    "run-npm-install": "npm install",
+    "run-bower-install": "bower install",
+    "run-gulp": "gulp",
+    "setup": "npm run run-npm-install && npm run run-bower-install && npm run run-gulp",
+    "scss": "rimraf dist && node-sass --watch src/static/scss/styles.scss -o dist/css",
+    "uglifyjs": "uglifyjs-folder src/static/js -eo dist/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
